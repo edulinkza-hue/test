@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutoring Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background -->
+  <svg class="bg" viewBox="0 0 1600 900" preserveAspectRatio="none"
+       xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+    <defs>
+      <filter id="blurLarge" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="60" result="b" />
+        <feComposite in="b" in2="SourceGraphic" operator="over"/>
+      </filter>
+      <filter id="blurMedium" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="30" result="b2" />
+        <feComposite in="b2" in2="SourceGraphic" operator="over"/>
+      </filter>
+      <radialGradient id="centerGlow" cx="50%" cy="58%" r="40%">
+        <stop offset="0%"  stop-color="#2b567b" stop-opacity="1"/>
+        <stop offset="35%" stop-color="#18334e" stop-opacity="0.9"/>
+        <stop offset="65%" stop-color="#0f2436" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#07121a" stop-opacity="0.0"/>
+      </radialGradient>
+      <radialGradient id="vignette" cx="50%" cy="40%" r="85%">
+        <stop offset="40%" stop-color="#000814" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#00020b" stop-opacity="1"/>
+      </radialGradient>
+      <radialGradient id="rings" cx="50%" cy="58%" r="60%" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#2a4b6c" stop-opacity="0.06" />
+        <stop offset="20%" stop-color="#2a4b6c" stop-opacity="0.03" />
+        <stop offset="40%" stop-color="#2a4b6c" stop-opacity="0.015" />
+        <stop offset="100%" stop-color="#2a4b6c" stop-opacity="0" />
+      </radialGradient>
+      <radialGradient id="bloom" cx="50%" cy="60%" r="75%">
+        <stop offset="0%" stop-color="#0f2e4b" stop-opacity="0.25"/>
+        <stop offset="50%" stop-color="#071830" stop-opacity="0.08"/>
+        <stop offset="100%" stop-color="#00040a" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#03060a"/>
+    <circle cx="50%" cy="60%" r="700" fill="url(#bloom)" filter="url(#blurLarge)" opacity="0.9"/>
+    <g opacity="0.75">
+      <circle cx="50%" cy="58%" r="220" fill="url(#rings)" filter="url(#blurMedium)"/>
+      <circle cx="50%" cy="58%" r="320" fill="url(#rings)" filter="url(#blurMedium)" opacity="0.5"/>
+      <circle cx="50%" cy="58%" r="430" fill="url(#rings)" filter="url(#blurMedium)" opacity="0.32"/>
+    </g>
+    <rect width="100%" height="100%" fill="url(#centerGlow)" style="mix-blend-mode:screen" />
+    <ellipse cx="50%" cy="82%" rx="420" ry="120" fill="#000611" opacity="0.35" filter="url(#blurMedium)"/>
+    <rect width="100%" height="100%" fill="url(#vignette)" opacity="1"/>
+    <circle cx="50%" cy="58%" r="40" fill="#2e6aa0" opacity="0.26" filter="url(#blurMedium)"/>
+  </svg>
+
+<!-- NAVIGATION BAR -->
+<nav>
+  <div class="logo">
+    <img src="LOGO.png" alt="EduLink Logo">
+  </div>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="https://forms.gle/pGo8z1YAmdKGga217">Get a Tutor</a>
+    <a href="https://forms.gle/5DSkoChLNuFH1h947">Become a Tutor</a>
+  </div>
+</nav>
+
+<section id="home"></section>
+  <div class="intro-container">
+
+    <!-- Step 1: Welcome message -->
+<div class="welcome fade-in-out">
+  <h1>Welcome to Edu<span class="gold">Link</span></h1>
+  <p>Connecting passionate tutors with eager learners</p>
+</div>
+
+    <!-- Step 2: Personalized Tutoring section -->
+    <div class="personalized hidden fade-in">
+      <h2>Personalized Tutoring Made Easy</h2>
+      <p>
+        Get matched with expert tutors who help you understand, improve, and achieve your academic goals.
+        Learning made simple, flexible, and effective.
+      </p>
+
+        <!-- Book Lesson Button -->
+      <a href="https://forms.gle/pGo8z1YAmdKGga217" class="book-btn">Book Your First Lesson</a>
+
+<div class="trust-badges">
+  <a href="https://www.google.com/search?q=EduLink+Tutoring+Reviews" target="_blank" aria-label="Google Reviews">
+    <img src="Google.png" alt="Google Reviews - EduLink">
+  </a>
+
+  <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+    <img src="facebook.png" alt="EduLink Facebook">
+  </a>
+
+  <a href="https://www.linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn">
+    <img src="linkedin.png" alt="EduLink LinkedIn">
+  </a>
+
+  <a href="https://www.instagram.com/yourhandle" target="_blank" aria-label="Instagram">
+    <img src="instagram.webp" alt="EduLink Instagram">
+  </a>
+</div>
+
+
+
+    </div>
+
+
+  </div>
+</section>
+
+<section id="about" class="about-section">
+
+  <div class="about-wrapper">
+
+    <!-- LEFT: TEXT CONTENT -->
+    <div class="about-content">
+      <h2> <span class="gold-text"> About EduLink</span></h2>
+
+      <p class="about-intro">
+        EduLink is an academic support platform dedicated to connecting students
+        with the right tutors to help them succeed.
+      </p>
+
+      <p>
+        We support high school and university students who need structured,
+        reliable, and personalized academic assistance — from concept
+        clarification to exam preparation.
+      </p>
+
+      <p>
+        What sets EduLink apart is our personalized tutor-matching process.
+        Each student is paired with a tutor whose academic strengths, teaching
+        style, and subject expertise best fit their needs.
+      </p>
+
+      <p>
+        All EduLink tutors are carefully vetted, academically strong, and
+        committed to helping students achieve measurable academic improvement.
+      </p>
+
+
+    </div>
+
+    <!-- RIGHT: IMAGE -->
+    <div class="about-image">
+      <img src="ABOUT PIC.png" alt="Students studying together">
+    </div>
+
+  </div>
+
+  <!-- OUR VISION (UNCHANGED POSITION, STYLED BELOW) -->
+  <p class="vision-box">
+    <strong>Our Vision</strong>
+    <em>
+      To become a trusted academic support platform that empowers students
+      to reach their full potential through personalized learning and quality tutoring.
+    </em>
+  </p>
+
+        <p class="closing-line">
+        Your <span class="gold-text">success</span> is our priority.
+      </p>
+
+</section>
+
+
+
+<section class="why-edulink">
+  <h2>Why Choose EduLink?</h2>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">🎓</span>
+      <h3>University-Focused Tutoring</h3>
+      <p>
+        Our tutors specialize in university-level subjects and understand the academic
+        demands of higher education.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">🧠</span>
+      <h3>Personalized Tutor Matching</h3>
+      <p>
+        Every student is matched with a tutor based on subject needs, learning style,
+        and academic goals.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">📊</span>
+      <h3>Results-Driven Approach</h3>
+      <p>
+        We focus on measurable improvement — better understanding, stronger performance,
+        and academic confidence.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <span class="why-icon">✅</span>
+      <h3>Vetted & Qualified Tutors</h3>
+      <p>
+        All EduLink tutors are academically vetted, interviewed, and committed to
+        professional excellence.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- OUR PROMISE & FEATURED TUTORS -->
+<div class="our-promise-section">
+
+  <!-- Promise message -->
+  <div class="our-promise">
+    <h2>Our Promise to You</h2>
+    <p>
+      At EduLink, we are committed to helping you achieve your academic goals with personalized guidance and expert tutors.
+    </p>
+  </div>
+
+  <!-- Featured Tutors -->
+  <div class="featured-tutors">
+    <h2>Meet Some of Our Top Tutors</h2>
+    <div class="tutor-grid">
+      <div class="tutor-card">
+        <img src="Maths.png" alt="Tutor">
+        <h3>Jane Doe</h3>
+        <p>Mathematics Expert</p>
+      </div>
+      <div class="tutor-card">
+        <img src="Accounting.png" alt="Tutor">
+        <h3>John Smith</h3>
+        <p>Accounting Specialist</p>
+      </div>
+      <div class="tutor-card">
+        <img src="Law.png" alt="Tutor">
+        <h3>Emily Brown</h3>
+        <p>Law Enthusiast</p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<section id="services" class="offerings">
+  <h2>Our Offerings</h2>
+  <div class="offerings-grid">
+
+        <!-- Notes for Students -->
+    <div class="notes">
+      <img src="Notes Pic.png" alt="Notes" class="offering-img">
+      <h3>Notes for Students</h3>
+      <ul>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>Accounting</li>
+        <li>English</li>
+        <li>History</li>
+        <li>Economics</li>
+      </ul>
+    </div>
+
+    <!-- University -->
+    <div class="university">
+      <img src="Univeristy.png" alt="University Students" class="offering-img">
+      <h3>University Faculties</h3>
+      <ul>
+        <li>Commerce</li>
+        <li>Law</li>
+        <li>Engineering</li>
+        <li>Computer Science</li>
+        <li>Health Sciences</li>
+        <li>Statistics</li>
+      </ul>
+    </div>
+
+    <div class="offerings-buttons">
+  <a href="https://forms.gle/SUSJbMKEtf6RHw1q6" class="btn buy-notes">Buy Notes</a>
+  <a href="https://forms.gle/pGo8z1YAmdKGga217" class="btn book-tutor">Book a Tutor</a>
+   </div>
+
+
+  </div>
+</section>
+
+
+
+<section class="read-more-section">
+  <button class="read-more-btn" onclick="toggleReadMore()">
+    📘 Read More About Our Subjects
+  </button>
+
+ <div class="read-more-content" id="readMoreContent">
+  <p>
+    At <strong>EduLink</strong>, we provide personalised tutoring for both
+    high school and university students, with a strong focus on
+    <strong>University of Pretoria (UP)</strong> curricula and expectations.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Mathematics:</strong> School-level foundations through to university
+      calculus, linear algebra, and problem-solving techniques commonly covered
+      in UP commerce and science programmes.
+    </li>
+
+    <li>
+      <strong>Accounting & Finance (UP-aligned):</strong> Financial Accounting,
+      Management Accounting, Cost Accounting, and introductory Finance —
+      tailored for <em>BCom, BCom Accounting, and related UP degrees</em>.
+    </li>
+
+    <li>
+      <strong>Law (UP-focused):</strong> Legal foundations, case law analysis,
+      interpretation, and academic writing support for UP Law modules and
+      first-year legal studies.
+    </li>
+
+    <li>
+      <strong>Commerce Faculty Support:</strong> Assistance with assignments,
+      test preparation, and concept clarity for UP students in
+      Accounting, Economics, Statistics, and Business modules.
+    </li>
+
+    <li>
+      <strong>High School Subjects:</strong> CAPS-aligned tutoring that builds
+      strong foundations for students aiming to transition successfully into
+      UP and other leading universities.
+    </li>
+  </ul>
+
+  <p>
+    Whether you are preparing for university, adjusting to your first year at
+    UP, or aiming to improve your results, our tutors understand the academic
+    standards and pressures you face — and guide you with confidence.
+  </p>
+</div>
+
+</section>
+
+
+
+<section class="pricing-section" id="pricing">
+  <h2 class="pricing-title">Our Prices</h2>
+
+  <!-- Toggle Switch -->
+  <div class="toggle-container">
+    <span id="onlineLabel" class="toggle-label active">Online</span>
+
+    <label class="switch">
+      <input type="checkbox" id="toggleSwitch">
+      <span class="slider"></span>
+    </label>
+
+    <span id="inPersonLabel" class="toggle-label">In-Person</span>
+  </div>
+
+  <!-- Card Carousel -->
+  <div class="pricing-carousel">
+    <button class="arrow left" onclick="scrollLeft()">&#10094;</button>
+
+    <div class="card-container" id="cardSlider">
+
+      <!-- ONLINE (Cheaper) -->
+      <div class="card online most-popular">
+        <span class="popular-badge">Most Popular</span>
+        <h3>Online One-on-One</h3>
+        <p class="price">R250 / hour</p>
+        <p>Flexible personalised online tutoring.</p>
+      </div>
+
+      <div class="card online">
+        <h3>Online Group Tutoring</h3>
+        <p class="price">R180 / hour per student</p>
+        <p>Collaborative online sessions.</p>
+      </div>
+
+      <div class="card online">
+        <h3>Online Exam Prep</h3>
+        <p class="price">R900 per course</p>
+        <p>Focused revision before assessments.</p>
+      </div>
+
+      <!-- IN-PERSON (Hidden by default) -->
+      <div class="card inperson hidden">
+        <h3>In-Person One-on-One</h3>
+        <p class="price">R320 / hour</p>
+        <p>Face-to-face academic support.</p>
+      </div>
+
+      <div class="card inperson hidden most-popular">
+        <span class="popular-badge">Most Popular</span>
+        <h3>In-Person Group Tutoring</h3>
+        <p class="price">R230 / hour per student</p>
+        <p>Interactive small-group sessions.</p>
+      </div>
+
+      <div class="card inperson hidden">
+        <h3>In-Person Exam Prep</h3>
+        <p class="price">R1,100 per course</p>
+        <p>Intensive on-site revision workshops.</p>
+      </div>
+
+    </div>
+
+    <button class="arrow right" onclick="scrollRight()">&#10095;</button>
+  </div>
+
+  <!-- Action Button (DOES NOT CHANGE) -->
+  <div class="pricing-action">
+    <a
+      href="https://forms.gle/pGo8z1YAmdKGga217"
+      class="btn book-first-lesson">
+      Book a Tutor
+    </a>
+  </div>
+</section>
+
+<!-- Notes Section -->
+<section class="notes-section" id="notes">
+  <h3 class="notes-title">Study Notes</h3>
+
+  <p class="notes-subtitle">
+    High-quality, exam-focused notes designed for University of Pretoria students.
+  </p>
+
+  <div class="notes-grid">
+    <div class="notes-card">
+      <h4>Accounting</h4>
+      <p>Worked examples, summaries, and exam tips.</p>
+      <span class="notes-price">R90</span>
+    </div>
+
+    <div class="notes-card">
+      <h4>Economics</h4>
+      <p>Clear diagrams, theory breakdowns, and definitions.</p>
+      <span class="notes-price">R70</span>
+    </div>
+
+    <div class="notes-card">
+      <h4>Statistics</h4>
+      <p>Formula sheets, step-by-step calculations.</p>
+      <span class="notes-price">R85</span>
+    </div>
+
+    <div class="notes-card">
+      <h4>Finance</h4>
+      <p>Core concepts explained simply and clearly.</p>
+      <span class="notes-price">R100</span>
+    </div>
+
+<!-- And many more trigger -->
+<div class="many-more" onclick="toggleMoreSubjects()">
+  <span>And <strong>many more</strong></span>
+  <span class="chevron">+</span>
+</div>
+
+<!-- Hidden subjects -->
+<div class="more-subjects" id="moreSubjects">
+  <ul>
+    <li>Financial Accounting (UP)</li>
+    <li>Managerial Accounting</li>
+    <li>Macroeconomics</li>
+    <li>Microeconomics</li>
+    <li>Business Statistics</li>
+    <li>Quantitative Methods</li>
+    <li>Corporate Finance</li>
+    <li>Econometrics</li>
+    <li>Auditing</li>
+    <li>Taxation</li>
+  </ul>
+</div>
+
+
+</section>
+
+
+<section class="notes-cta">
+  <a
+    href="https://forms.gle/SUSJbMKEtf6RHw1q6"
+    class="btn notes-btn">
+    Buy Notes
+  </a>
+</section>
+
+
+
+<section class="process-section">
+  <h2>How Our Process Works</h2>
+  <p class="process-intro">
+    We make learning simple, personalized, and effective — from first contact to lasting results.
+  </p>
+
+  <div class="process-steps">
+    <div class="process-card">
+      <div class="step-icon">📝</div>
+      <h3>1. Tell Us What You Need</h3>
+      <p>Choose your subject, upload your syllabus, and tell us your goals.</p>
+    </div>
+
+    <div class="process-card">
+      <div class="step-icon">🤝</div>
+      <h3>2. Get Matched with a Tutor</h3>
+      <p>We connect you with the most suitable, experienced tutor for your course.</p>
+    </div>
+
+    <div class="process-card">
+      <div class="step-icon">📅</div>
+      <h3>3. Schedule & Learn</h3>
+      <p>Pick a convenient time for your lessons — online or in-person.</p>
+    </div>
+
+    <div class="process-card">
+      <div class="step-icon">🎯</div>
+      <h3>4. Track Your Progress</h3>
+      <p>See measurable improvement and stay ahead with our guided sessions.</p>
+    </div>
+  </div>
+
+  <!-- Centered buttons -->
+  <div class="process-buttons">
+    <a href="https://forms.gle/SUSJbMKEtf6RHw1q6" class="btn buy-notes-btn">
+      Buy Notes
+    </a>
+
+    <a href="https://forms.gle/pGo8z1YAmdKGga217" class="btn book-tutor-btn">
+      Book a Tutor
+    </a>
+  </div>
+</section>
+
+
+<section class="edulink-stats">
+  <div class="stats-grid">
+    <div class="stat-box">
+      <h3>20,000+</h3>
+      <p>Hours of Tutoring Delivered</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>95%</h3>
+      <p>Student Satisfaction Rate</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>50+</h3>
+      <p>Qualified University Tutors</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>10+</h3>
+      <p>University Subjects Covered</p>
+    </div>
+  </div>
+</section>
+
+<section class="support-note">
+  <p>
+    You don’t have to figure this out alone. We partner with students and parents to support progress, confidence, and real academic results.
+  </p>
+</section>
+
+
+
+
+
+<section class="testimonials">
+  <h2>What Students and Parents Say</h2>
+
+  <div class="testimonial-slider">
+    <div class="testimonial-card active">
+      <img src="Law.png" alt="Sarah M." class="testimonial-avatar">
+      <p>
+        "EduLink helped my daughter improve her Accounting marks from 60% to 85%.
+        The tutors are patient and professional!"
+      </p>
+      <h3>- Sarah M., Parent</h3>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="Accounting.png" alt="Thabo K." class="testimonial-avatar">
+      <p>
+        "I finally understood Calculus thanks to EduLink. The sessions were clear,
+        flexible, and motivating!"
+      </p>
+      <h3>- Thabo K., Student</h3>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="Maths.png" alt="Aisha R." class="testimonial-avatar">
+      <p>
+        "The best tutoring experience I’ve ever had. They matched me with the
+        perfect Law tutor!"
+      </p>
+      <h3>- Aisha R., University Student</h3>
+    </div>
+  </div>
+
+  <div class="testimonial-controls">
+    <span class="prev">❮</span>
+    <span class="next">❯</span>
+  </div>
+</section>
+
+
+<section id="contact" class="enquiry">
+  <h2>General Enquiries</h2>
+
+  <p class="enquiry-subtext">
+    Should you have any questions regarding our tutoring services, study notes,
+    or tutor applications, we invite you to submit an enquiry via our official
+    Google Form.
+  </p>
+
+  <p class="enquiry-subtext">
+    Please note that clicking the button below will redirect you to a secure
+    external Google Form where your enquiry can be submitted.
+  </p>
+
+  <div class="enquiry-cta">
+    <a
+      href="https://forms.gle/dK2nE5623NzDYahb8"
+      target="_blank"
+      class="btn enquiry-btn"
+    >
+      Proceed to Enquiry Form
+    </a>
+
+    <p class="enquiry-note">
+      You will be redirected to Google Forms · Responses are typically provided
+      within 24 hours
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <p class="copyright">© 2025 EduLink. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    window.addEventListener("load", () => {
+      const welcome = document.querySelector(".welcome");
+      const personalized = document.querySelector(".personalized");
+
+      setTimeout(() => {
+        welcome.style.display = "none";
+        personalized.classList.remove("hidden");
+        personalized.style.opacity = "1";
+      }, 2000);
+    });
+  </script>
+ 
+ 
+
+
+
+  <script>
+  const toggleSwitch = document.getElementById("toggleSwitch");
+const onlineCards = document.querySelectorAll(".card.online");
+const inPersonCards = document.querySelectorAll(".card.inperson");
+
+const onlineLabel = document.getElementById("onlineLabel");
+const inPersonLabel = document.getElementById("inPersonLabel");
+
+const cardSlider = document.getElementById("cardSlider");
+
+toggleSwitch.addEventListener("change", () => {
+  if (toggleSwitch.checked) {
+    // Show IN-PERSON
+    onlineCards.forEach(card => card.classList.add("hidden"));
+    inPersonCards.forEach(card => card.classList.remove("hidden"));
+
+    onlineLabel.classList.remove("active");
+    inPersonLabel.classList.add("active");
+  } else {
+    // Show ONLINE
+    inPersonCards.forEach(card => card.classList.add("hidden"));
+    onlineCards.forEach(card => card.classList.remove("hidden"));
+
+    inPersonLabel.classList.remove("active");
+    onlineLabel.classList.add("active");
+  }
+
+  cardSlider.scrollLeft = 0;
+});
+
+function scrollLeft() {
+  cardSlider.scrollBy({ left: -300, behavior: "smooth" });
+}
+
+function scrollRight() {
+  cardSlider.scrollBy({ left: 300, behavior: "smooth" });
+}
+
+</script>
+
+
+
+
+
+
+<script>
+  function toggleMoreSubjects() {
+    const box = document.getElementById("moreSubjects");
+    const trigger = document.querySelector(".many-more");
+
+    box.classList.toggle("show");
+    trigger.classList.toggle("active");
+  }
+</script>
+
+
+
+
+
+
+
+
+<script>
+  const testimonials = document.querySelectorAll(".testimonial-card");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+
+  let index = 0;
+
+  function showTestimonial(i) {
+    testimonials.forEach((card, idx) => {
+      card.classList.remove("active");
+      if (idx === i) card.classList.add("active");
+    });
+  }
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % testimonials.length;
+    showTestimonial(index);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(index);
+  });
+
+  // Auto-rotate every 6 seconds
+  setInterval(() => {
+    index = (index + 1) % testimonials.length;
+    showTestimonial(index);
+  }, 6000);
+</script>
+
+
+
+<script>
+  function toggleReadMore() {
+    const content = document.getElementById("readMoreContent");
+    const button = document.querySelector(".read-more-btn");
+
+    content.classList.toggle("active");
+
+    if (content.classList.contains("active")) {
+      button.textContent = "📕 Hide Subject Details";
+    } else {
+      button.textContent = "📘 Read More About Our Subjects";
+    }
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
